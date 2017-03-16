@@ -1,34 +1,28 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
+import {IndexLink, Link} from 'react-router'
 import './Main.scss'
 
 export const Main = () => (
-  <div>
-    <h1>NEUQer投票系统</h1>
-    <h2><a href='https://bodyno.com' target='_blank'>bodyno</a></h2>
-    <IndexLink to='/' activeClassName='route--active'>
-      Home
-    </IndexLink>
-    {' · '}
-    <Link to='/counter' activeClassName='route--active'>
-      Counter
-    </Link>
-    {' · '}
-    <Link to='/zen' activeClassName='route--active'>
-      Zen
-    </Link>
-    {' · '}
-    <Link to='/elapse' activeClassName='route--active'>
-      Elapse
-    </Link>
-    {' · '}
-    <Link to='/route/88' activeClassName='route--active'>
-      Route
-    </Link>
-    {' · '}
-    <Link to='/notFound' activeClassName='route--active'>
-      404
-    </Link>
+  <div className="banner">
+    <div className="logo-wrapper">
+      <div className="logo"></div>
+    </div>
+    <div className="router-wrapper">
+      <IndexLink to='/' className="router-item" activeClassName='route--active'>
+        首页
+      </IndexLink>
+      <Link to='/counter' className="router-item" activeClassName='route--active'>
+        我的投票
+      </Link>
+      <Link to='/zen' className="router-item" activeClassName='route--active'>
+        个人中心
+      </Link>
+    </div>
+    <div className="vote-button">
+      <Link to='/elapse' className="router-item" activeClassName='route--active'>
+        我要投票
+      </Link>
+    </div>
   </div>
 )
 
