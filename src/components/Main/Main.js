@@ -1,10 +1,10 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
-import './Header.scss'
+import './Main.scss'
 
-export const Header = () => (
+export const Main = () => (
   <div>
-    <h1>React Starter Kit</h1>
+    <h1>NEUQer投票系统</h1>
     <h2><a href='https://bodyno.com' target='_blank'>bodyno</a></h2>
     <IndexLink to='/' activeClassName='route--active'>
       Home
@@ -32,4 +32,4 @@ export const Header = () => (
   </div>
 )
 
-export default Header
+export default Main

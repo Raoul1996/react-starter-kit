@@ -1,10 +1,10 @@
 import React from 'react'
-import { Header } from 'components/Header/Header'
-import classes from 'components/Header/Header.scss'
+import { Header } from 'components/Main/Main'
+import classes from 'components/Main/Main.scss'
 import { IndexLink, Link } from 'react-router'
 import { shallow } from 'enzyme'
 
-describe('(Component) Header', () => {
+describe('(Component) Main', () => {
   let _wrapper
 
   beforeEach(() => {
